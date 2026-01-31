@@ -1,0 +1,145 @@
+/* Configuration de base pour la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #1F2937; /* Couleur de fond sombre principale */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Conteneur principal de l'application */
+.container {
+    background-color: #1F2937;
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Style du grand titre */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800; /* Extra bold */
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Style pour la partie verte du titre */
+.highlight {
+    color: #4ADF86; /* Vert clair néon */
+}
+
+/* Sous-titre en gris clair */
+.subtitle {
+    color: #D5D4D8;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* Ajusté pour faire de la place aux settings */
+}
+
+/* Settings Container */
+.settings-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #273549;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #D5D4D8;
+}
+
+/* Style des inputs */
+input[type="number"] {
+    background: #1F2937;
+    border: 1px solid #4ADF86;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    width: 50px;
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    accent-color: #10B981;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+/* Bouton vert de génération */
+button {
+    background-color: #10B981; /* Vert intense */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%; /* Bouton pleine largeur */
+}
+
+button:hover {
+    background-color: #059669; /* Vert un peu plus foncé au survol */
+}
+
+/* Ligne de séparation fine */
+.divider {
+    height: 1px;
+    background-color: #2F3E53;
+    margin: 2rem 0;
+}
+
+/* Conteneur pour aligner les boîtes de mots de passe */
+.passwords-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur mobile */
+}
+
+/* Boîtes qui contiennent les mots de passe générés */
+.password-box {
+    background-color: #273549; /* Fond bleu nuit plus clair */
+    flex: 1; /* Les deux boîtes prennent la même largeur */
+    min-width: 150px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    color: #55F991; /* Texte vert clair pour le mot de passe */
+    font-family: monospace; /* Police à chasse fixe pour bien voir les caractères */
+    font-size: 0.9rem;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Indique qu'on peut cliquer */
+    transition: transform 0.1s, background-color 0.2s;
+    position: relative; /* Pour positionner une éventuelle info-bulle si besoin */
+    
+    /* Gestion des textes trop longs */
+    word-break: break-all; /* Force le retour à la ligne si le mot est trop long */
+    height: auto; /* Permet à la boîte de grandir */
+}
+
+.password-box:active {
+    transform: scale(0.98); /* Petit effet de clic */
+}
+
+.password-box:hover {
+    background-color: #2f4056;
+}

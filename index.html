@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <!-- On lie notre fichier CSS pour le style -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Police 'Inter' pour un look moderne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- En-tête avec titre et sous-titre -->
+      <h1>Generate a <br /><span class="highlight">random password</span></h1>
+      <p class="subtitle">Never use an insecure password again.</p>
+
+      <!-- Settings Section -->
+      <div class="settings-container">
+        <div class="setting">
+          <label for="password-length">Length:</label>
+          <input
+            type="number"
+            id="password-length"
+            min="5"
+            max="25"
+            value="15"
+          />
+        </div>
+        <div class="setting">
+          <label for="numbers-toggle">Numbers</label>
+          <input type="checkbox" id="numbers-toggle" checked />
+        </div>
+        <div class="setting">
+          <label for="symbols-toggle">Symbols</label>
+          <input type="checkbox" id="symbols-toggle" checked />
+        </div>
+      </div>
+
+      <!-- Bouton pour générer les mots de passe -->
+      <button id="generate-btn">Generate passwords</button>
+
+      <!-- Ligne de séparaion décorative -->
+      <div class="divider"></div>
+
+      <!-- Conteneur pour les résultats des mots de passe -->
+      <div class="passwords-container">
+        <div class="password-box">
+          <span id="password-1">...</span>
+        </div>
+        <div class="password-box">
+          <span id="password-2">...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- On lie notre script JS à la fin du body -->
+    <script src="index.js"></script>
+  </body>
+</html>
