@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-    <!-- On lie notre fichier CSS pour le style -->
+    <!-- ICI : On connecte le fichier de style "index.css" pour que la page soit belle (couleurs, espacements...) -->
     <link rel="stylesheet" href="index.css" />
-    <!-- Police 'Inter' pour un look moderne -->
+    <!-- ICI : On va chercher une jolie police d'écriture (Inter) sur Internet (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,14 +16,15 @@
   </head>
   <body>
     <div class="container">
-      <!-- En-tête avec titre et sous-titre -->
+      <!-- ICI : C'est le titre principal de la page et le sous-titre -->
       <h1>Generate a <br /><span class="highlight">random password</span></h1>
       <p class="subtitle">Never use an insecure password again.</p>
 
-      <!-- Settings Section -->
+      <!-- ICI : La zone des réglages (longueur, chiffres, symboles) -->
       <div class="settings-container">
         <div class="setting">
           <label for="password-length">Length:</label>
+          <!-- Un champ pour choisir un nombre entre 5 et 25 -->
           <input
             type="number"
             id="password-length"
@@ -34,21 +35,23 @@
         </div>
         <div class="setting">
           <label for="numbers-toggle">Numbers</label>
+          <!-- Une case à cocher pour dire "oui je veux des chiffres" -->
           <input type="checkbox" id="numbers-toggle" checked />
         </div>
         <div class="setting">
           <label for="symbols-toggle">Symbols</label>
+          <!-- Une case à cocher pour dire "oui je veux des symboles" -->
           <input type="checkbox" id="symbols-toggle" checked />
         </div>
       </div>
 
-      <!-- Bouton pour générer les mots de passe -->
+      <!-- ICI : Le gros bouton vert sur lequel on clique -->
       <button id="generate-btn">Generate passwords</button>
 
-      <!-- Ligne de séparaion décorative -->
+      <!-- Juste une ligne décorative pour séparer -->
       <div class="divider"></div>
 
-      <!-- Conteneur pour les résultats des mots de passe -->
+      <!-- ICI : Les deux boîtes où vont apparaître les mots de passe générés -->
       <div class="passwords-container">
         <div class="password-box">
           <span id="password-1">...</span>
@@ -59,7 +62,7 @@
       </div>
     </div>
 
-    <!-- On lie notre script JS à la fin du body -->
+    <!-- ICI : On connecte le fichier "index.js" qui contient le "cerveau" de la page (la logique) -->
     <script src="index.js"></script>
   </body>
 </html>
