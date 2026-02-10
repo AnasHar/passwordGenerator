@@ -1,4 +1,4 @@
-# Générateur de Mot de Passe (Password Generator)
+# Générateur de Mot de Passe (Password Generator)!
 
 Bienvenue sur le projet de Générateur de Mot de Passe ! C'est une petite application web qui permet de créer des mots de passe sécurisés et aléatoires en un clic.
 
